@@ -1,6 +1,4 @@
-var contentboxCount = 2;
-
-
+var contentboxCount = $('.contentbox').length
 
 $(document).ready(function() {
   for(var i=0; i<contentboxCount; i++) {
