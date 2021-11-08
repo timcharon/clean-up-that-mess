@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Shbshb Pixel';
+    src: url('fonts/ShbshbPixel-Italic.woff2') format('woff2'),
+        url('fonts/ShbshbPixel-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+  max-width: 90%;
+}
+
+.contentbox {
+  position: absolute;
+  width: 500px;
+  color: white;
+  background-color: #fa61b3;
+  font-family: "Helvetica";
+}
+
+.contentbox img {
+  margin: auto;
+}
+
+#contentbox-1 {
+  top: 400px;
+  left: 600px;
+}
+
+#contentbox-2 {
+  top: 100px;
+  left: 800px;
+}
