@@ -1,14 +1,30 @@
-var contentboxCount = $('.contentbox').length
+var contentboxCount = $('.contentbox').length;
+var indexCount = 1;
 
 $(document).ready(function() {
   for(var i=0; i<contentboxCount; i++) {
+    randomPosition(i);
     dragFunction(i);
+    toggle(i);
   };
 });
+
+// RANDOM Position
+
+function randomPosition(randomCount){
+  var randomItem = document.getElementById("contentbox-"+randomCount);
+  var newtop = Math.floor(Math.random() * (window.innerHeight-randomItem.offsetHeight));
+  var newleft = Math.floor(Math.random() * (window.innerWidth-randomItem.offsetWidth));
+  randomItem.style.top = newtop+"px";
+  randomItem.style.left = newleft+"px";
+};
+
+// DRAGGING FUNCTION
 
 function dragFunction(dragcount){
 
   var dragItem = document.getElementById("contentbox-"+dragcount);
+  var dragButton = document.getElementById("content-button-"+dragcount);
 
   var active = false;
   var currentX;
@@ -34,7 +50,6 @@ function dragFunction(dragcount){
     }
   };
 
-
   function drag(e){
     if(active) {
 
@@ -47,6 +62,9 @@ function dragFunction(dragcount){
       yOffset = currentY;
 
       setTranslate(currentX, currentY, dragItem);
+
+      dragItem.style.zIndex = indexCount;
+
     };
   };
 
@@ -59,6 +77,22 @@ function dragFunction(dragcount){
     initialY = currentY;
 
     active = false;
+    indexCount ++;
   };
-  console.log(1);
+};
+
+// TOGGLE KASTEN
+
+function toggle(toggleCount) {
+
+  document.getElementById("content-button-"+toggleCount).addEventListener("click", toggleFunct);
+
+  function toggleFunct() {
+    var toggleItem = document.getElementById("content-"+toggleCount);
+    if (toggleItem.style.display === "none") {
+      toggleItem.style.display = "block";
+    } else {
+      toggleItem.style.display = "none";
+    };
+  };
 };
