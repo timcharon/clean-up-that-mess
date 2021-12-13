@@ -1,0 +1,332 @@
+:root {
+}
+
+body {
+  margin: 0;
+  background: pink;
+}
+
+/* ILLUS */
+
+.illustration {
+  font-family: "Obkinderoderkeineentscheidenwiralleine";
+  font-size: 200px;
+  margin: 0;
+}
+
+#illustration-trigger {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 40%;
+}
+
+/* DITHER */
+
+.dither {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/brainstorming/rauschen.png");
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 3000;
+}
+
+/* TRIGGER */
+
+.trigger-container {
+  position: absolute;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.trigger {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.trigger h1 {
+  margin: 0;
+  padding-top: 30px;
+  font-family: "ArmandGrotesk";
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: -5px;
+  text-align: center;
+}
+
+.trigger p {
+  margin: 0;
+  padding: 50px 0 50px 0;
+  font-family: "ACaslonProRegular";
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.trigger button {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 5px 15px 0 5px;
+  border: none;
+  background-color: white;
+  font-family: "ACaslonProItalic";
+  font-size: 40px;
+}
+
+.trigger button:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+/* BRICK WALL */
+
+.row-container {
+  position: absolute;
+  max-width: 100vw;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.row:nth-child(odd) .storybox:first-child, .row:nth-child(odd) .storybox:last-child {
+  width: 70px;
+}
+
+.storybox {
+  width: 150px;
+  height: 66px;
+  background-color: black;
+  margin: 0px;
+  background-size: cover;
+  z-index: 1000;
+}
+
+.storybox:hover {
+  filter: invert(1);
+}
+
+.play-button {
+  border: none;
+  background-color: transparent;
+}
+
+.play-button:hover {
+}
+
+.audiodescription {
+  display: none;
+}
+
+#row-last {
+  position: relative;
+  background-image: url("images/brick-wall/brick-fooder.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+#row-last:hover {
+    filter: invert(1);
+}
+#row-last p {
+  position: relative;
+  left: 90vw;
+  bottom: 2vw;
+  font-family: "ArmandGrotesk";
+  font-size: 2vw;
+  letter-spacing: -2px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;;
+}
+
+/* MANIFESTO GENERAL */
+
+.manifesto-container {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  color: black;
+  font-family: "ArmandGrotesk";
+  font-size: 30px;
+  /* text-shadow: 0 0 5px rgba(0,0,0,0.5); */
+  line-height: 30px;
+}
+
+.manifesto-header {
+  position: fixed;
+  width: 100%;
+  height: 30%;
+}
+
+.manifesto-header img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.manifesto-left, .manifesto-right {
+  position: absolute;
+  height: 70%;
+  top: 30%;
+  margin-left, margin-right: 15vw;
+  overflow-y: scroll;
+}
+
+.manifesto-left {
+  width: 60vw;
+  left: 0;
+}
+
+.manifesto-right {
+  width: 40vw;
+  left: 60vw;
+}
+
+.manifesto-textbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 30px;
+  overflow-y: scroll;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.manifesto-textbox h2 {
+  position: relative;
+  width: 100%;
+  margin: 0 0 40px 0;
+  top: 15px;
+  box-sizing: border-box;
+  font-family: "ArmandGrotesk";
+  font-size: 70px;
+  line-height: 60px;
+  font-weight: normal;
+  letter-spacing: -4px;
+  text-align: center;
+  color: black;
+}
+
+.manifesto-textbox p {
+  font-family: "ACaslonProRegular";
+}
+
+.manifesto-textbox a {
+  text-decoration: none;
+  color: red;
+}
+
+.manifesto-textbox a:hover {
+  color: black;
+}
+
+#manifesto-about, #manifesto-contributions {
+  position: relative;
+  display: block !important;
+}
+
+#manifesto-contributions {
+}
+
+/* POSTER */
+
+.cat-row {
+    display: flex;
+    height: 50%;
+}
+
+.category {
+  width: 25%;
+  height: 90%;
+  margin: 1% 1%;
+  color: transparent;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.category:hover {
+  filter: invert();
+  color: white;
+}
+
+#category-0 {
+  background-image: url('images/archive-cencored/058.png');
+}
+
+#category-1 {
+  background-image: url('images/archive-cencored/056.png');
+}
+
+#category-2 {
+  background-image: url('images/archive-cencored/100.png');
+}
+
+#category-3 {
+  background-image: url('images/archive-cencored/056.png');
+}
+
+#category-4 {
+  background-image: url('images/archive-cencored/056.png');
+}
+
+#category-5 {
+  background-image: url('images/archive-cencored/058.png');
+}
+
+#category-6 {
+  background-image: url('images/archive-cencored/100.png');
+}
+
+#category-7 {
+  background-image: url('images/archive-cencored/082.png');
+}
+
+/* PRINT */
+
+/* @media print {
+
+.storybox {
+position: relative;
+top: 0px !important;
+left: 0px !important;
+width: 100vw;
+page-break-after: always;
+}
+.audiodescription {
+display: block !important;
+}
+.audiodescription p {
+font-family: "ACaslonProRegular";
+font-size: 25px;
+line-height: 27px;
+margin: 100px;
+}
+
+.audiobox {
+display: none;
+}
+
+#row-last {
+display: none;
+}
+}
+
+@page { size: auto;  margin: 0mm; } */

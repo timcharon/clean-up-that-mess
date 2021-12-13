@@ -5,19 +5,19 @@
 .play-button {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 50% 100%;
   border: none;
-  box-shadow: 0px 0px 10px 10px red;
-  background-color: red;
-  color: white;
+  box-shadow: 0px 0px 10px 10px transparent;
+  background-color: transparent;
+  color: red;
   font-family: "ACaslonProItalic";
   font-size: 20px;
 }
 
 .play-button:hover {
-  background-color: white;
-  box-shadow: 0 0 10px 10px white;
-  color: red;
+  background-color: red;
+  box-shadow: 0 0 10px 10px red;
+  color: white;
 }
 
 .audiodescription {
@@ -25,10 +25,26 @@
 }
 
 @media print {
+  .storybox {
+    position: relative;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100vw;
+    page-break-after: always;
+  }
+
   .audiobox {
     display: none;
   }
   .audiodescription {
     display: block;
   }
+  .audiodescription p{
+    font-family: "ACaslonProRegular";
+    font-size: 25px;
+    line-height: 27px;
+    margin: 100px;
+  }
 }
+
+@page { size: auto;  margin: 0mm; }

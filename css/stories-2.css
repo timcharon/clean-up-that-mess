@@ -1,0 +1,357 @@
+:root {
+}
+
+body {
+  margin: 0;
+  background: pink;
+}
+
+/* DITHER */
+
+.dither {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/brainstorming/rauschen.png");
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 3000;
+}
+
+/* TRIGGER */
+
+.trigger-container {
+  position: absolute;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.trigger {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.trigger h1 {
+  margin: 0;
+  padding-top: 30px;
+  font-family: "ArmandGrotesk";
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: -5px;
+  text-align: center;
+}
+
+.trigger p {
+  margin: 0;
+  padding: 50px 0 50px 0;
+  font-family: "ACaslonProRegular";
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.trigger button {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 5px 15px 0 5px;
+  border: none;
+  background-color: white;
+  font-family: "ACaslonProItalic";
+  font-size: 40px;
+}
+
+.trigger button:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+/* BRICK WALL */
+
+.row-container {
+  position: absolute;
+  max-width: 100vw;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.row:nth-child(odd) .storybox:first-child, .row:nth-child(odd) .storybox:last-child {
+  width: 70px;
+}
+
+.storybox {
+  width: 150px;
+  height: 66px;
+  background-color: black;
+  margin: 0px;
+  background-size: cover;
+  z-index: 1000;
+}
+
+.storybox:hover {
+  filter: invert(1);
+}
+
+.play-button {
+  border: none;
+  background-color: transparent;
+}
+
+.play-button:hover {
+}
+
+.audiodescription {
+  display: none;
+}
+
+#row-last {
+  position: relative;
+  background-image: url("images/brick-wall/brick-fooder.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+#row-last:hover {
+    filter: invert(1);
+}
+#row-last p {
+  position: relative;
+  left: 90vw;
+  bottom: 2vw;
+  font-family: "ArmandGrotesk";
+  font-size: 2vw;
+  letter-spacing: -2px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;;
+}
+
+/* MANIFESTO GENERAL */
+
+.manifesto-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+  color: black;
+  font-family: "ArmandGrotesk";
+  font-size: 30px;
+  /* text-shadow: 0 0 5px rgba(0,0,0,0.5); */
+  line-height: 30px;
+}
+
+.manifesto-header {
+  position: fixed;
+  width: 100%;
+  height: 30%;
+}
+
+.manifesto-header img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.manifesto {
+  position: absolute;
+  width: 70vw;
+  height: 70%;
+  top: 30%;
+  left: 15vw;
+  margin-left, margin-right: 15vw;
+  overflow-y: scroll;
+}
+
+.manifesto-textbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  z-index: 0;
+  box-sizing: border-box;
+  display: none;
+  background-color: white;
+}
+
+.manifesto-textbox h2 {
+  font-family: "ArmandGrotesk";
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
+.manifesto-textbox p {
+}
+
+/* 1 DEMANDS */
+
+#manifesto-textbox-0 {
+
+}
+
+#manifesto-textbox-0  ul {
+  list-style: none;
+  font-family: "ObKinderoderkeineentscheidenwiralleine";
+  font-size: 40px;
+  line-height: 42px;
+}
+
+#manifesto-textbox-0  li {
+  margin: 10px 50px 10px 50px ;
+  padding: 20px;
+  border: 2px dashed black;
+}
+
+
+/* 2 RESSOURCES */
+
+#manifesto-textbox-1 {
+
+}
+
+/* 3 DATABASE */
+
+#manifesto-textbox-2 {
+
+}
+
+.database {
+  display: flex;
+}
+
+.database table {
+  width: 45%;
+  margin: 25px;
+  border-collapse: collapse;
+}
+
+.database th, td {
+  border: 1px solid black;
+}
+
+.database th {
+  font-family: "ArmandGrotesk";
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+.database td {
+  font-family: "ACaslonProRegular";
+}
+
+/* 5 COLLABORATORS */
+
+#manifesto-textbox-4 p {
+  font-family: "ACaslonProItalic";
+  text-align: center;
+}
+
+/* BOOKMARKS */
+
+.bookmark {
+  position: fixed;
+  z-index: 500;
+}
+
+.bookmark h1 {
+  font-family: "ObKinderoderkeineentscheidenwiralleine";
+  font-size: 250px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.bookmark p {
+  font-family: "ACaslonProItalic";
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.bookmark:hover {
+  color: red;
+  cursor: help;
+}
+
+#bookmark-0 {
+  top: 30%;
+  left: 3%;
+  display: block;
+}
+
+#manifesto-textbox-0 {
+  display: block !important;
+}
+
+#bookmark-1 {
+  top: 55%;
+  left: 1%;
+}
+
+#bookmark-2 {
+  top: 75%;
+  left: 1%;
+}
+
+#bookmark-3 {
+  top: 30%;
+  right: 5%;
+}
+
+#bookmark-4 {
+  top: 55%;
+  right: 1%;
+}
+
+#bookmark-4 h1 {
+  150px;
+}
+
+#bookmark-5 {
+  top: 78%;
+  right: 2%;
+}
+
+/* PRINT */
+
+/* @media print {
+
+.storybox {
+position: relative;
+top: 0px !important;
+left: 0px !important;
+width: 100vw;
+page-break-after: always;
+}
+.audiodescription {
+display: block !important;
+}
+.audiodescription p {
+font-family: "ACaslonProRegular";
+font-size: 25px;
+line-height: 27px;
+margin: 100px;
+}
+
+.audiobox {
+display: none;
+}
+
+#row-last {
+display: none;
+}
+}
+
+@page { size: auto;  margin: 0mm; } */

@@ -1,23 +1,35 @@
 @font-face {
   font-family: "MotherNatureisaLesbian";
   src: url("fonts/MotherNatureisaLesbian-Regular.woff2") format("woff2"),
-       url("fonts/MotherNatureisaLesbian-Regular.woff") format("woff");
+  url("fonts/MotherNatureisaLesbian-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "ACaslonProItalic";
   src: url("fonts/ACaslonPro-Italic.woff2") format("woff2"),
-       url("fonts/ACaslonPro-Italic.woff") format("woff");
+  url("fonts/ACaslonPro-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "ACaslonProRegular";
   src: url("fonts/ACaslonPro-Regular.woff2") format("woff2"),
-       url("fonts/ACaslonPro-Regular.woff") format("woff");
+  url("fonts/ACaslonPro-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "FGroteskBook";
   src: url("fonts/F-Grotesk-Book.woff2") format("woff2"),
-       url("fonts/F-Grotesk-Book.woff") format("woff");
+  url("fonts/F-Grotesk-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ObKinderoderkeineentscheidenwiralleine";
+  src: url("fonts/ObKinderoderkeineentscheidenwiralleine.woff2") format('woff2'),
+  url("fonts/ObKinderoderkeineentscheidenwiralleine.woff") format('woff');
+}
+
+@font-face {
+  font-family: "ArmandGrotesk";
+  src: url("fonts/ArmandGrotesk-Regular.woff2") format('woff2'),
+  url("fonts/ArmandGrotesk-Regular.woff") format('woff');
 }
